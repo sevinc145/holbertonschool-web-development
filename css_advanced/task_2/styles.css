@@ -1,198 +1,124 @@
-@font-face {
-    font-family: SourceSansPro;
-    src: url(../assets/source-sans-pro_bold.otf);
-    font-weight: 600;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: SourceSansPro;
-    src: url(../assets/source-sans-pro_light.otf);
-    font-weight: 300;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: SourceSansPro;
-    src: url(../assets/source-sans-pro_italic.otf);
-    font-weight: 400;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: SourceSansPro;
-    src: url(../assets/source-sans-pro_regular.otf);
-    font-weight: 500;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: SpinCycleOT;
-    src: url(../assets/spin-cycle-ot.otf);
-    font-display: swap;
-}
-
-/* ----- GENERAL ----- */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    background-color: white;
-    font-family: SourceSansPro;
-    color: white;
-    text-align: center;
-}
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-}
-
-/* ----- HEADER ----- */
+/* ===== HEADER ===== */
 
 header {
-    width: 800px;
-    margin: 0 auto;
-    height: 35px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    width: 1103px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 100;
+    z-index: 10;
 }
 
 header div {
-    width: 234px;
-    height: 15px;
     display: flex;
-    justify-content: space-between;
+    gap: 52px;
 }
 
 header a {
-    font-size: 12px;
     text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
 }
 
-/* ----- MAIN ----- */
+/* ===== HERO SECTION ===== */
 
-main {
+.hero {
+    background-image: url("../assets/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 1093px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-a {
-    font-family: SourceSansPro;
-    color: white;
-    text-align: center;
-}
-
-section {
-    width: 100%;
+.hero .title {
+    margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero .title h1 {
     font-size: 120px;
+    font-weight: 700;
+    line-height: 1;
 }
 
-.title p {
-    width: 100%;
-    max-width: 250px;
-    text-align: justify;
-    text-justify: inter-word;
-    margin-bottom: 25px;;
-}
-
-.title p::after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-}
-
-section.hero {
-    background-image: url("../assets/background.png");
-    background-size: 100% auto;
-    background-position: center;
+.hero .title p {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-    padding: 75px;
+    gap: 57px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
 
-section .title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 150px;
-}
-
-button {
-    background-color: #C271FF;
-    border-radius: 999px;
-    padding: 15px 25px;
+.hero button {
+    width: 162px;
+    height: 44px;
     border: none;
+    border-radius: 22px;
+    background: #C271FF;
     color: white;
-    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 38px;
+    cursor: pointer;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .5);
 }
 
-section .pros {
+/* ===== LEARN FROM THE PROS ===== */
+
+.pros {
+    margin-top: 170px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 75px;
-    margin-top: 150px;
 }
 
-section .pros h2 {
-	font-family: SourceSansPro;
-    font-weight: 300;
+.pros h2 {
     font-size: 32px;
+    font-weight: 300;
 }
 
 .purple-word {
-    font-weight: 600;
     color: #C271FF;
+    font-weight: 700;
 }
 
-section .people p {
-    font-family: SourceSansPro;
-    font-weight: 300;
-}
-
-section .people {
+.people {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 125px;
-    width: 100%;
+    justify-content: center;
+    gap: 58px;
+    margin-top: 87px;
 }
 
-section .people div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
+.people div {
     width: 150px;
 }
 
 .round-image {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+}
+
+.people h3 {
+    margin-top: 9px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.people p {
+    margin-top: 2px;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
 }
