@@ -19,18 +19,18 @@ header div {
 }
 
 header a {
+    color: #FFFFFF;
     text-decoration: none;
-    color: white;
     font-size: 12px;
     font-weight: 700;
 }
 
-/* ===== HERO SECTION ===== */
+/* ===== HERO ===== */
 
 .hero {
     background-image: url("../assets/background.png");
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     min-height: 1093px;
     display: flex;
@@ -49,15 +49,18 @@ header a {
     font-size: 120px;
     font-weight: 700;
     line-height: 1;
+    margin-bottom: 10px;
 }
 
 .hero .title p {
     display: flex;
+    justify-content: center;
     gap: 57px;
     font-size: 16px;
     font-weight: 700;
-    text-transform: uppercase;
-    margin-top: 10px;
+    margin-bottom: 38px;
+    max-width: none;
+    width: auto;
 }
 
 .hero button {
@@ -66,12 +69,11 @@ header a {
     border: none;
     border-radius: 22px;
     background: #C271FF;
-    color: white;
+    color: #FFFFFF;
     font-size: 14px;
     font-weight: 600;
-    margin-top: 38px;
     cursor: pointer;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, .5);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* ===== LEARN FROM THE PROS ===== */
@@ -102,6 +104,7 @@ header a {
 
 .people div {
     width: 150px;
+    text-align: center;
 }
 
 .round-image {
@@ -111,14 +114,16 @@ header a {
 }
 
 .people h3 {
-    margin-top: 9px;
+    margin-top: 10px;
     font-size: 18px;
     font-weight: 900;
 }
 
-.people p {
-    margin-top: 2px;
+.people blockquote {
+    margin-top: 5px;
     font-size: 16px;
     font-style: italic;
+    font-weight: 300;
     line-height: 24px;
+    border: none;
 }
